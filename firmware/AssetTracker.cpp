@@ -43,13 +43,13 @@ void AssetTracker::gpsOn(){
     pinMode(D6,OUTPUT);
     //digitalWrite(D6,LOW);
     gps.begin(4800);
-    gps.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
-    delay(500);
+    //gps.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+    //delay(500);
     // Default is 1 Hz update rate
-    gps.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);
-    delay(500);    
-    gps.sendCommand(PGCMD_NOANTENNA);
-    delay(500);
+    //gps.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);
+    //delay(500);    
+    //gps.sendCommand(PGCMD_NOANTENNA);
+    //delay(500);
 }
 
 void AssetTracker::gpsOff(){
